@@ -5,7 +5,7 @@
     <DropLibDirectory>$(DropDirectory)\lib</DropLibDirectory>
     <DropContentDirectory>$(DropDirectory)\content</DropContentDirectory>
     <DropToolsDirectory>$(DropDirectory)\tools</DropToolsDirectory>
-
+ 
     <NuGetEXE>$(ProgramFiles86)\nuget\nuget.exe</NuGetEXE>
     <NuGet_apiKey Condition="'$(NuGet_apiKey)'==''">You must call with /p:NuGet_apiKey={yourkey} to publish to nuget</NuGet_apiKey>
   </PropertyGroup>

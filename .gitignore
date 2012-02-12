@@ -23,3 +23,5 @@ src/Salient.JsonClient.Silverlight.Tests/Bin/*
 src/Salient.JsonClient.Silverlight/Bin/*
 src/Salient.JsonClient.Silverlight.Tests/obj/*
 src/Salient.JsonClient.Silverlight/obj/*
+msbuild.log
+msbuild.log

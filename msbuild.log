@@ -1,4 +1,4 @@
-Build started 2/12/2012 4:22:36 PM.
+Build started 2/12/2012 4:39:41 PM.
 Project "C:\dev\Salient\Salient.JsonClient\src\build.xml" on node 1 (default targets).
 Building with tools version "4.0".
 Target "UpdateVersion" in file "C:\dev\Salient\Salient.JsonClient\tools\msbuild\Versioning.targets.xml" from project "C:\dev\Salient\Salient.JsonClient\src\build.xml" (target "Go" depends on it):
@@ -4065,4 +4065,4 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:10.45
+Time Elapsed 00:00:09.83
