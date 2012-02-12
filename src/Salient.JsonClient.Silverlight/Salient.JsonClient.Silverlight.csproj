@@ -63,11 +63,91 @@
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Salient.JsonClient.35\ApiAsyncCallback.cs">
+      <Link>ApiAsyncCallback.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\ApiAsyncResult.cs">
+      <Link>ApiAsyncResult.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\ApiAsyncResultBase.cs">
+      <Link>ApiAsyncResultBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\ApiException.cs">
+      <Link>ApiException.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\CacheCallBack.cs">
+      <Link>CacheCallBack.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\CacheItem.cs">
+      <Link>CacheItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\CacheItemBase.cs">
+      <Link>CacheItemBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\CacheItemState.cs">
+      <Link>CacheItemState.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\Client.cs">
+      <Link>Client.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\Converters\ApiEnumConverter.cs">
+      <Link>Converters\ApiEnumConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\Converters\UnixDateTimeConverter.cs">
+      <Link>Converters\UnixDateTimeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\Converters\UnixDateTimeHelper.cs">
+      <Link>Converters\UnixDateTimeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\HttpUtility.cs">
+      <Link>HttpUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\IJsonClient.cs">
+      <Link>IJsonClient.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\IRequestCache.cs">
+      <Link>IRequestCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\IRequestController.cs">
+      <Link>IRequestController.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\IRequestFactory.cs">
+      <Link>IRequestFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\IThrottedRequestQueue.cs">
+      <Link>IThrottedRequestQueue.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestCache.cs">
+      <Link>RequestCache.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestController.cs">
+      <Link>RequestController.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestFactory.cs">
+      <Link>RequestFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestHolder.cs">
+      <Link>RequestHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestNotificationStatus.cs">
+      <Link>RequestNotificationStatus.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\RequestRetryDiscriminator.cs">
+      <Link>RequestRetryDiscriminator.cs</Link>
+    </Compile>
+    <Compile Include="..\Salient.JsonClient.35\ThrottedRequestQueue.cs">
+      <Link>ThrottedRequestQueue.cs</Link>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Salient.JsonClient.35\Notes.txt">
+      <Link>Notes.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>
