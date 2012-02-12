@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Go" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Version - as per SemVer standard - http://semver.org/ -->
+  <PropertyGroup>
+    <Major>2</Major>
+    <!-- Major = breaking changes (consumers will need to change existing calls) -->
+    <Minor>0</Minor>
+    <!-- Minor = New features added but still backwards compatible -->
+    <Patch>0</Patch>
+    <!-- Patch = Bug fixes only (still backwards compatible) -->
+    <PreRelease>bleeding</PreRelease>
+    <!-- empty for stable build, (text} for bleedingedge build. -->
+  </PropertyGroup>
+
+  <Import Project="$(MSBuildExtensionsPath)\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\tools\msbuild\CommonProperties.targets.xml" />
+  <Import Project="$(MSBuildProjectDirectory)\..\tools\msbuild\Versioning.targets.xml" />
+  <Import Project="$(MSBuildProjectDirectory)\..\tools\msbuild\TestsAndMetrics.targets.xml" />
+  <Import Project="$(MSBuildProjectDirectory)\..\tools\msbuild\DropsAndPackaging.targets.xml" />
+
+  <PropertyGroup>
+    <Configuration>Release</Configuration>
+    <Platform>Any CPU</Platform>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Assemblies     Include="$(SrcDirectory)\Salient.JsonClient.35\bin\$(Configuration)\*.dll"/>
+    <TestAssemblies Include="$(SrcDirectory)\Salient.JsonClient.35\bin\$(Configuration)\*.dll"/>
+  </ItemGroup>
+
+  <!-- Used to build the stable master branch -->
+  <!-- 
+  
+  Nunit does not want to load JsonConvert - interweb says it is a permissions issue see https://github.com/bitpusher/Salient.JsonClient/issues/1 
+  #TODO: re-enable RunTests
+  
+  -->
+  <Target Name="Go" DependsOnTargets="UpdateVersion;Build;RunTests;Package">
+
+    <!-- CalculateMetrics  calculation of metrics disabled until replacement for Reflector can be integrated -->
+  </Target>
+
+  <!-- Used to build the Dev branch - everything except packaging -->
+  <Target Name="GoDev" DependsOnTargets="UpdateVersion;Build;RunTests">
+  </Target>
+
+  <Target Name="Build">
+    <MSBuild Projects="$(SrcDirectory)\Salient.JsonClient.sln" Targets="Rebuild"
+             Properties="Configuration=$(Configuration);Platform=$(Platform);EnableCodeAnalysis=true;GenerateDocumentation=true" />
+  </Target>
+</Project>
+

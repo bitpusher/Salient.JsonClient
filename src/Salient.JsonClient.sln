@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.35.Tests", "Salient.JsonClient.35.Tests\Salient.JsonClient.35.Tests.csproj", "{FC275E96-A479-4C3D-9062-1F8C659F8FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.Silverlight", "Salient.JsonClient.Silverlight\Salient.JsonClient.Silverlight.csproj", "{34623097-5283-4D19-9D0F-23C878FAC1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.Silverlight.Tests", "Salient.JsonClient.Silverlight.Tests\Salient.JsonClient.Silverlight.Tests.csproj", "{4449E779-D145-419A-9B93-887D118DA7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.Phone7", "Salient.JsonClient.Phone7\Salient.JsonClient.Phone7.csproj", "{1307DA47-8BEC-46F5-B850-53176EB1E148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.Phone7.Tests", "Salient.JsonClient.Phone7.Tests\Salient.JsonClient.Phone7.Tests.csproj", "{EA6F4B38-BAD9-40A4-A864-38514F667B94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{AE0284F4-B196-49B6-8A29-0F7EFA73A0D1}"
+	ProjectSection(SolutionItems) = preProject
+		build.xml = build.xml
+		..\tools\msbuild\CommonProperties.targets.xml = ..\tools\msbuild\CommonProperties.targets.xml
+		..\tools\msbuild\DropsAndPackaging.targets.xml = ..\tools\msbuild\DropsAndPackaging.targets.xml
+		Salient.JsonClient.nuspec = Salient.JsonClient.nuspec
+		..\tools\msbuild\TestsAndMetrics.targets.xml = ..\tools\msbuild\TestsAndMetrics.targets.xml
+		..\tools\msbuild\Versioning.targets.xml = ..\tools\msbuild\Versioning.targets.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salient.JsonClient.35", "Salient.JsonClient.35\Salient.JsonClient.35.csproj", "{978853FE-D14D-40B4-A587-84E56CB36C91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{28CC27B6-9E06-4E7A-B610-D9BC521D9656}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC275E96-A479-4C3D-9062-1F8C659F8FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC275E96-A479-4C3D-9062-1F8C659F8FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC275E96-A479-4C3D-9062-1F8C659F8FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC275E96-A479-4C3D-9062-1F8C659F8FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34623097-5283-4D19-9D0F-23C878FAC1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34623097-5283-4D19-9D0F-23C878FAC1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34623097-5283-4D19-9D0F-23C878FAC1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34623097-5283-4D19-9D0F-23C878FAC1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4449E779-D145-419A-9B93-887D118DA7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4449E779-D145-419A-9B93-887D118DA7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4449E779-D145-419A-9B93-887D118DA7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4449E779-D145-419A-9B93-887D118DA7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1307DA47-8BEC-46F5-B850-53176EB1E148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1307DA47-8BEC-46F5-B850-53176EB1E148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1307DA47-8BEC-46F5-B850-53176EB1E148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1307DA47-8BEC-46F5-B850-53176EB1E148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6F4B38-BAD9-40A4-A864-38514F667B94}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{978853FE-D14D-40B4-A587-84E56CB36C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978853FE-D14D-40B4-A587-84E56CB36C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978853FE-D14D-40B4-A587-84E56CB36C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978853FE-D14D-40B4-A587-84E56CB36C91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <version>2.0.0-bleeding-0</version>
+    <authors>Sky Sanders,David Laing</authors>
+    <owners>Sky Sanders,David Laing</owners>
+    <licenseUrl>https://github.com/bitpusher/Salient.JsonClient/raw/master/LICENSE.txt</licenseUrl>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" />
+      <dependency id="Salient.ReflectiveLoggingAdapter" />
+    </dependencies>
+    <id>Salient.JsonClient</id>
+    <title>Salient.JsonClient</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Salient.JsonClient</description>
+    <language>en-GB</language>
+  </metadata>
+  <files>
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Newtonsoft.Json.dll" target="lib\net35\Newtonsoft.Json.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Newtonsoft.Json.pdb" target="lib\net35\Newtonsoft.Json.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Newtonsoft.Json.xml" target="lib\net35\Newtonsoft.Json.xml" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Salient.JsonClient.35.dll" target="lib\net35\Salient.JsonClient.35.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Salient.JsonClient.35.pdb" target="lib\net35\Salient.JsonClient.35.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Salient.ReflectiveLoggingAdapter.35.dll" target="lib\net35\Salient.ReflectiveLoggingAdapter.35.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\Release\Salient.ReflectiveLoggingAdapter.35.pdb" target="lib\net35\Salient.ReflectiveLoggingAdapter.35.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Newtonsoft.Json.dll" target="lib\sl3-wp\Newtonsoft.Json.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Newtonsoft.Json.pdb" target="lib\sl3-wp\Newtonsoft.Json.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Newtonsoft.Json.xml" target="lib\sl3-wp\Newtonsoft.Json.xml" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Salient.JsonClient.Phone7.dll" target="lib\sl3-wp\Salient.JsonClient.Phone7.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Salient.JsonClient.Phone7.pdb" target="lib\sl3-wp\Salient.JsonClient.Phone7.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Salient.ReflectiveLoggingAdapter.Phone7.dll" target="lib\sl3-wp\Salient.ReflectiveLoggingAdapter.Phone7.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\Bin\Release\Salient.ReflectiveLoggingAdapter.Phone7.pdb" target="lib\sl3-wp\Salient.ReflectiveLoggingAdapter.Phone7.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Newtonsoft.Json.dll" target="lib\sl40\Newtonsoft.Json.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Newtonsoft.Json.pdb" target="lib\sl40\Newtonsoft.Json.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Newtonsoft.Json.xml" target="lib\sl40\Newtonsoft.Json.xml" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Salient.JsonClient.Silverlight.dll" target="lib\sl40\Salient.JsonClient.Silverlight.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Salient.JsonClient.Silverlight.pdb" target="lib\sl40\Salient.JsonClient.Silverlight.pdb" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Salient.ReflectiveLoggingAdapter.Silverlight.dll" target="lib\sl40\Salient.ReflectiveLoggingAdapter.Silverlight.dll" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\Bin\Release\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" target="lib\sl40\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" />
+  </files>
+</package>
