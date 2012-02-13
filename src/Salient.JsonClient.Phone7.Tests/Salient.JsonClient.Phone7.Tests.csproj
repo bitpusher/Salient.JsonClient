@@ -55,8 +55,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.0.8\lib\sl3-wp\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Salient.ReflectiveLoggingAdapter.Phone7">
-      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.1.1.0-bleeding-3\lib\sl3-wp\Salient.ReflectiveLoggingAdapter.Phone7.dll</HintPath>
+    <Reference Include="Salient.ReflectiveLoggingAdapter.Phone7, Version=3.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.0\lib\sl3-wp\Salient.ReflectiveLoggingAdapter.Phone7.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="system" />
