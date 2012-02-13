@@ -32,8 +32,10 @@ namespace Salient.JsonClient
     /// </summary>
     public class CacheItemBase
     {
-        
-        
+        /// <summary>
+        /// 
+        /// </summary>
+        public bool Unique { get; set; }
 
         ///<summary>
         ///</summary>

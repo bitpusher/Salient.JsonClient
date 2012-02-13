@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CityIndex.Dev.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.11\lib\net35-full\log4net.dll</HintPath>
@@ -50,22 +56,39 @@
     <Reference Include="pnunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Salient.ReflectiveLoggingAdapter.35, Version=3.0.0.4, Culture=neutral, PublicKeyToken=b9b5972b9f69332b, processorArchitecture=MSIL">
+    <Reference Include="Salient.ReflectiveLoggingAdapter.35, Version=3.0.1.5, Culture=neutral, PublicKeyToken=b9b5972b9f69332b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.0\lib\net35\Salient.ReflectiveLoggingAdapter.35.dll</HintPath>
+      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.1-bleeding-5\lib\net35\Salient.ReflectiveLoggingAdapter.35.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CacheFixture.cs" />
+    <Compile Include="CacheItemFixture.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="ClientFixture.cs" />
+    <Compile Include="HttpUtilityFixture.cs" />
+    <Compile Include="JsonClientMocks\TestRequestFactory.cs" />
+    <Compile Include="JsonClientMocks\TestRequestInfo.cs" />
+    <Compile Include="JsonClientMocks\TestWebReponse.cs" />
+    <Compile Include="JsonClientMocks\TestWebRequest.cs" />
+    <Compile Include="JsonExceptionFactoryFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestRetryDiscriminatorFixture.cs" />
+    <Compile Include="SupportingTests.cs" />
+    <Compile Include="TestRequestFactoryFixture.cs" />
+    <Compile Include="ThrottleFixture.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CityIndex.Dev.PublicKey" />
+    <None Include="CityIndex.Dev.snk" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

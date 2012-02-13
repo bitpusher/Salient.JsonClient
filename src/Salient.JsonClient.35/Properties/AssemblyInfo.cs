@@ -34,3 +34,7 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("2.0.0.0")]
 [assembly: AssemblyFileVersion("2.0.0.0")]
+
+
+
+[assembly: InternalsVisibleTo("Salient.JsonClient.35.Tests, PublicKey=0024000004800000940000000602000000240000525341310004000001000100296a2a0fa4b3557647455e5c48d5084e31bf6480fd9c3d2b10fed72cfb7e3ac10a6f6c050885eb657ffd7efb52ebd316eec5ea9a1d9d96db5a956f8e5c563e0732c5a823fa77c2eb2fb230b45f1c251eb13c14d30d05d1d5a11d69956a2454c391018ebf5ac153452e23ae777d8b00858ceb483fa54a50ba4d7ac8a34f4bbcce")]

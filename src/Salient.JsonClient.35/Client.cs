@@ -200,7 +200,7 @@ namespace Salient.JsonClient
         /// <returns></returns>
         public TDTO Request<TDTO>(string target, string uriTemplate, string method, Dictionary<string, object> parameters, TimeSpan cacheDuration, string throttleScope)
         {
-            return Request<TDTO>(target, null, method, null, TimeSpan.FromMilliseconds(0), null, ContentType.JSON);
+            return Request<TDTO>(target, uriTemplate, method, parameters,   cacheDuration, throttleScope, ContentType.JSON);
         }
 
 
@@ -276,7 +276,7 @@ namespace Salient.JsonClient
         ///<returns></returns>
         public TDTO Request<TDTO>(string target, string method)
         {
-            return Request<TDTO>(target, null, method, null, TimeSpan.FromMilliseconds(0), null);
+            return Request<TDTO>(target, null, method, null);
         }
 
 
@@ -315,7 +315,7 @@ namespace Salient.JsonClient
                                        string method, Dictionary<string, object> parameters, TimeSpan cacheDuration,
                                        string throttleScope)
         {
-            BeginRequest(cb, state, target, uriTemplate, method, parameters, TimeSpan.FromMilliseconds(0), "default", ContentType.JSON);
+            BeginRequest(cb, state, target, uriTemplate, method, parameters, cacheDuration, throttleScope, ContentType.JSON);
         }
 
         /// <summary>
@@ -363,7 +363,7 @@ namespace Salient.JsonClient
         ///<typeparam name="TDTO"></typeparam>
         public void BeginRequest<TDTO>(ApiAsyncCallback<TDTO> cb, object state, string target, string method)
         {
-            BeginRequest(cb, state, target, null, method, null, TimeSpan.FromMilliseconds(0), "default");
+            BeginRequest(cb, state, target, null, method, null, TimeSpan.FromMilliseconds(0), null);
         }
 
 
@@ -378,7 +378,7 @@ namespace Salient.JsonClient
         ///<typeparam name="TDTO"></typeparam>
         public void BeginRequest<TDTO>(ApiAsyncCallback<TDTO> cb, object state, string target, string uriTemplate, string method, Dictionary<string, object> parameters)
         {
-            BeginRequest(cb, state, target, uriTemplate, method, parameters, TimeSpan.FromMilliseconds(0), "default");
+            BeginRequest(cb, state, target, uriTemplate, method, parameters, TimeSpan.FromMilliseconds(0), null);
         }
 
         /// <summary>
