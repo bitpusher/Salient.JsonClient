@@ -9,7 +9,7 @@
     <!-- Minor = New features added but still backwards compatible -->
     <Patch>2</Patch>
     <!-- Patch = Bug fixes only (still backwards compatible) -->
-    <PreRelease>bleeding</PreRelease>
+    <PreRelease></PreRelease>
     <!-- empty for stable build, (text} for bleedingedge build. -->
   </PropertyGroup>
 
