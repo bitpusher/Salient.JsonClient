@@ -93,6 +93,7 @@ namespace Salient.JsonClient
         public Client(Uri uri, IRequestController requestController)
             : this(uri, requestController, null, null)
         {
+            Log.Debug("Client created for " + uri.AbsoluteUri);
 
             _requestController = requestController;
 
@@ -200,7 +201,7 @@ namespace Salient.JsonClient
         /// <returns></returns>
         public TDTO Request<TDTO>(string target, string uriTemplate, string method, Dictionary<string, object> parameters, TimeSpan cacheDuration, string throttleScope)
         {
-            return Request<TDTO>(target, uriTemplate, method, parameters,   cacheDuration, throttleScope, ContentType.JSON);
+            return Request<TDTO>(target, uriTemplate, method, parameters, cacheDuration, throttleScope, ContentType.JSON);
         }
 
 
