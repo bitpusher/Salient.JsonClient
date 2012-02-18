@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace Salient.JsonClient.Tests
 {
     [TestFixture]
-    public class SupportingTests
+    public class SupportingTests : LoggingFixtureBase
     {
         /// <summary>
         /// proves that closing the response of a request does not enable reuse.

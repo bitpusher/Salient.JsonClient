@@ -9,9 +9,8 @@ using NUnit.Framework;
 
 namespace Salient.JsonClient.Tests
 {
-    public class FooDTO { }
     [TestFixture]
-    public class CacheFixture
+    public class CacheFixture : LoggingFixtureBase
     {
         [Test]
         public void ItemCanBeCached()

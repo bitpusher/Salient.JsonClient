@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace Salient.JsonClient.Tests
 {
     [TestFixture]
-    public class CacheItemFixture
+    public class CacheItemFixture : LoggingFixtureBase
     {
         public class TestDTO { }
 

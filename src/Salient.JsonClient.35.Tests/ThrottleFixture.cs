@@ -11,7 +11,7 @@ using NUnit.Framework;
 namespace Salient.JsonClient.Tests
 {
     [TestFixture]
-    public class ThrottleFixture
+    public class ThrottleFixture : LoggingFixtureBase
     {
 
         [Test, MTAThreadAttribute]

@@ -11,7 +11,7 @@ namespace Salient.JsonClient.Tests
     /// Ensures the behavior of the mock http request layer
     /// </summary>
     [TestFixture]
-    public class TestRequestFactoryFixture
+    public class TestRequestFactoryFixture : LoggingFixtureBase
     {
         [Test]
         public void CanCreateTestRequest()

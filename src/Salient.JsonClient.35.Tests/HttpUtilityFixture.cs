@@ -3,7 +3,7 @@
 namespace Salient.JsonClient.Tests
 {
     [TestFixture]
-    public class HttpUtilityFixture
+    public class HttpUtilityFixture : LoggingFixtureBase
     {
         [Test]
         public void UrlEncodeBehavesLikeBaseClassImplementation()

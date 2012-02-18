@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Salient.JsonClient.Tests
 {
     [TestFixture]
-    public class RequestRetryDiscriminatorFixture
+    public class RequestRetryDiscriminatorFixture : LoggingFixtureBase
     {
         private RequestRetryDiscriminator _decider;
 

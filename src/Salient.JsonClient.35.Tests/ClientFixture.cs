@@ -10,7 +10,7 @@ using NUnit.Framework;
 namespace Salient.JsonClient.Tests
 {
     [TestFixture,Ignore("research")]
-    public class ClientFixture
+    public class ClientFixture : LoggingFixtureBase
     {
         [Test]
         public void CheckDns()

@@ -37,7 +37,7 @@ namespace Salient.JsonClient
         private bool _notifiedWaitingOnWindow;
         private int _outstandingRequests;
         private bool _processingQueue;
-        private static object _lockTarget = new object();
+        
 
         #endregion
 
