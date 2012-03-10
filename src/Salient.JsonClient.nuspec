@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
-    <version>3.1.4-bleeding-0</version>
+    <version>3.1.6-bleeding-0</version>
     <authors>Sky Sanders,David Laing</authors>
     <owners>Sky Sanders,David Laing</owners>
     <licenseUrl>https://github.com/bitpusher/Salient.JsonClient/raw/master/LICENSE.txt</licenseUrl>

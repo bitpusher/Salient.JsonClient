@@ -7,9 +7,9 @@
     <!-- Major = breaking changes (consumers will need to change existing calls) -->
     <Minor>1</Minor>
     <!-- Minor = New features added but still backwards compatible -->
-    <Patch>5</Patch>
+    <Patch>6</Patch>
     <!-- Patch = Bug fixes only (still backwards compatible) -->
-    <PreRelease></PreRelease>
+    <PreRelease>bleeding</PreRelease>
     <!-- empty for stable build, (text} for bleedingedge build. -->
   </PropertyGroup>
 
@@ -31,12 +31,7 @@
   </ItemGroup>
 
   <!-- Used to build the stable master branch -->
-  <!-- 
-  
-  Nunit does not want to load JsonConvert - interweb says it is a permissions issue see https://github.com/bitpusher/Salient.JsonClient/issues/1 
-  #TODO: re-enable RunTests
-  
-  -->
+ 
   <Target Name="Go" DependsOnTargets="UpdateVersion;Build;RunTests;Package">
 
     <!-- CalculateMetrics  calculation of metrics disabled until replacement for Reflector can be integrated -->
