@@ -37,6 +37,6 @@
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.JsonClient.Silverlight.pdb" target="lib\sl40\Salient.JsonClient.Silverlight.pdb" />
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.ReflectiveLoggingAdapter.Silverlight.dll" target="lib\sl40\Salient.ReflectiveLoggingAdapter.Silverlight.dll" />
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" target="lib\sl40\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" />
-    <file src="src\**\*.cs" target="src" />
+    <file src="lib\src\**\*.cs" target="src" />
   </files>
 </package>
