@@ -56,9 +56,8 @@
     <Reference Include="pnunit.framework">
       <HintPath>..\packages\NUnit.2.5.10.11092\lib\pnunit.framework.dll</HintPath>
     </Reference>
-    <Reference Include="Salient.ReflectiveLoggingAdapter.35, Version=3.0.4.8, Culture=neutral, PublicKeyToken=b9b5972b9f69332b, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.4\lib\net35\Salient.ReflectiveLoggingAdapter.35.dll</HintPath>
+    <Reference Include="Salient.ReflectiveLoggingAdapter.35">
+      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.8\lib\net35\Release\Salient.ReflectiveLoggingAdapter.35.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

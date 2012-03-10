@@ -270,10 +270,8 @@ namespace Salient.JsonClient
         {
             CacheItem<TDTO> item = _cache.Get<TDTO>(url);
 
-            // prevent the item from being re-used. everything goes in the cache, even 0 ms (unique items) 
-            // but this is just one more guard
-            item.CacheDuration = TimeSpan.FromTicks(0);
-            item.Unique = true;
+ 
+ 
 
             byte[] bodyValue = new byte[] { };
             switch (item.ContentType)
