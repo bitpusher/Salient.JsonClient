@@ -10,7 +10,7 @@
     <NuGet_apiKey Condition="'$(NuGet_apiKey)'==''">You must call with /p:NuGet_apiKey={yourkey} to publish to nuget</NuGet_apiKey>
   </PropertyGroup>
 
-  <Target Name="Package" DependsOnTargets="CreateDropDirectories;CopySourceToDropDirectory;CopyMSBuildOutputToDropDirectory;CopyLicenseToAllDirectories;CopyReportsToDropFolder">
+  <Target Name="Package" DependsOnTargets="CreateDropDirectories;CopyMSBuildOutputToDropDirectory;CopySourceToDropDirectory;CopyLicenseToAllDirectories;CopyReportsToDropFolder">
     <Message Text="Packaging with NuGet" />
     <Copy SourceFiles="$(RootDirectory)\src\Salient.JsonClient.nuspec" DestinationFolder="$(DropDirectory)"/>
     <Exec Command='"$(NuGetEXE)" pack -sym $(DropDirectory)\Salient.JsonClient.nuspec' ContinueOnError='false' WorkingDirectory='$(DropDirectory)'/>
