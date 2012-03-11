@@ -1,0 +1,88 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:CacheItemState.cs" caret="134" fromTop="5" />
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:CacheItemBase.cs" caret="3502" fromTop="48" />
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:Client.cs" caret="1106" fromTop="19" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:ClientFixture.cs" caret="0" fromTop="0" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:CacheFixture.cs" caret="0" fromTop="0" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:JsonExceptionFactoryFixture.cs" caret="0" fromTop="0" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:HttpUtilityFixture.cs" caret="0" fromTop="0" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:SimpleDebugAppender.cs" caret="0" fromTop="0" />
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:packages.config" caret="0" fromTop="0" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:TestRequestFactoryFixture.cs" caret="0" fromTop="0" />
+      <File id="34623097-5283-4D19-9D0F-23C878FAC1B4/f:RequestFactory.cs/l:..?Salient.JsonClient.35?RequestFactory.cs" caret="72" fromTop="2" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:LoggingFixtureBase.cs" caret="700" fromTop="22" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.cmd/l:C!?dev?Salient?Salient.JsonClient?build.cmd" caret="195" fromTop="1" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="451" fromTop="9" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1789" fromTop="30" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="2092" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="543" fromTop="11" />
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:Client.cs" caret="3551" fromTop="17" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:LoggingFixtureBase.cs" caret="808" fromTop="17" />
+      <File id="FC275E96-A479-4C3D-9062-1F8C659F8FDB/f:LoggingFixtureBase.cs" caret="781" fromTop="23" />
+      <File id="978853FE-D14D-40B4-A587-84E56CB36C91/f:packages.config" caret="0" fromTop="0" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1800" fromTop="39" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="2777" fromTop="38" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="3289" fromTop="48" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1804" fromTop="39" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="1135" fromTop="20" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1800" fromTop="21" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1636" fromTop="23" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="2218" fromTop="14" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="2775" fromTop="25" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="801" fromTop="9" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:DropsAndPackaging.targets.xml/l:C!?dev?Salient?Salient.JsonClient?tools?msbuild?DropsAndPackaging.targets.xml" caret="2757" fromTop="18" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1408" fromTop="30" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1783" fromTop="37" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:Salient.JsonClient.nuspec/l:C!?dev?Salient?Salient.JsonClient?src?Salient.JsonClient.nuspec" caret="1789" fromTop="30" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.cmd/l:C!?dev?Salient?Salient.JsonClient?build.cmd" caret="195" fromTop="1" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="1962" fromTop="22" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="1687" fromTop="16" />
+      <File id="AE0284F4-B196-49B6-8A29-0F7EFA73A0D1/f:build.xml/l:C!?dev?Salient?Salient.JsonClient?src?build.xml" caret="451" fromTop="9" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:Salient.ReflectiveLoggingAdapter.ILog">
+      <Item value="Debug`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="_uri" priority="0" />
+      <Item value="public" priority="1" />
+      <Item value="class" priority="0" />
+      <Item value="TextMessageWriter`0" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="LogManager`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="logger" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="AbsoluteUri" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Salient.ReflectiveLoggingAdapter.LogManager">
+      <Item value="GetLogger`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Salient.JsonClient.Tests.LoggingFixture">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

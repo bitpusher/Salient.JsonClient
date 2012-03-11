@@ -84,9 +84,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.4.0.8\lib\sl4\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Salient.ReflectiveLoggingAdapter.Silverlight, Version=3.0.9.18, Culture=neutral, PublicKeyToken=f53a41098b9ed911, processorArchitecture=MSIL">
+    <Reference Include="Salient.ReflectiveLoggingAdapter.Silverlight, Version=3.1.0.21, Culture=neutral, PublicKeyToken=f53a41098b9ed911, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.0.9-bleeding-18\lib\sl4\Debug\Salient.ReflectiveLoggingAdapter.Silverlight.dll</HintPath>
+      <HintPath>..\packages\Salient.ReflectiveLoggingAdapter.3.1.0\lib\sl4\Release\Salient.ReflectiveLoggingAdapter.Silverlight.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows" />
     <Reference Include="mscorlib" />
