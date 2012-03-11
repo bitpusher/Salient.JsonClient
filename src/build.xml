@@ -5,9 +5,9 @@
   <PropertyGroup>
     <Major>3</Major>
     <!-- Major = breaking changes (consumers will need to change existing calls) -->
-    <Minor>1</Minor>
+    <Minor>2</Minor>
     <!-- Minor = New features added but still backwards compatible -->
-    <Patch>9</Patch>
+    <Patch>0</Patch>
     <!-- Patch = Bug fixes only (still backwards compatible) -->
     <PreRelease></PreRelease>
     <!-- empty for stable build, (text} for bleedingedge build. -->
