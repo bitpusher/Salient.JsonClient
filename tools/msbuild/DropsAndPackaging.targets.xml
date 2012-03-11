@@ -10,7 +10,7 @@
     <NuGet_apiKey Condition="'$(NuGet_apiKey)'==''">You must call with /p:NuGet_apiKey={yourkey} to publish to nuget</NuGet_apiKey>
   </PropertyGroup>
 
-  <Target Name="Package" DependsOnTargets="CreateDropDirectories;CopyMSBuildOutputToDropDirectory;CopySourceToDropDirectory;CopyLicenseToAllDirectories;CopyReportsToDropFolder">
+  <Target Name="Package" DependsOnTargets="CreateDropDirectories;CopyMSBuildOutputToDropDirectory;CopySourceToDropDirectory;DeleteBinFilesFromSource;CopyLicenseToAllDirectories;CopyReportsToDropFolder">
     <Message Text="Packaging with NuGet" />
     <Copy SourceFiles="$(RootDirectory)\src\Salient.JsonClient.nuspec" DestinationFolder="$(DropDirectory)"/>
     <Exec Command='"$(NuGetEXE)" pack -sym $(DropDirectory)\Salient.JsonClient.nuspec' ContinueOnError='false' WorkingDirectory='$(DropDirectory)'/>
@@ -29,6 +29,7 @@
     <MakeDir Directories="$(DropContentDirectory)" Condition="!Exists('$(DropContentDirectory)')" />
     <MakeDir Directories="$(DropToolsDirectory)" Condition="!Exists('$(DropToolsDirectory)')" />
   </Target>
+  
   <Target Name="CopySourceToDropDirectory">
     <ItemGroup>
       <MSBuildOutputItems Include="$(SrcDirectory)\**\*.cs" />
@@ -36,7 +37,15 @@
     <Message Text="Copying source files to output to $(DropLibDirectory)" />
     <Copy ContinueOnError="false" SourceFiles="@(MSBuildOutputItems)" DestinationFiles="@(MSBuildOutputItems ->'$(DropLibDirectory)\src\%(RecursiveDir)%(Filename)%(Extension)')" />
   </Target>
-  
+
+  <Target Name="DeleteBinFilesFromSource">
+    <ItemGroup>
+      <DeleteFiles Include="$(DropLibDirectory)\src\**\bin\**\*.*" />
+    </ItemGroup>
+    <Message Text="Deleting $(Configuration) dlls from src" />
+    <Delete Files="@(DeleteFiles)" />
+  </Target>
+
   <Target Name="CopyMSBuildOutputToDropDirectory">
     <ItemGroup>
       <MSBuildOutputItems Include="$(SrcDirectory)\**\bin\$(Configuration)\*.*" />
