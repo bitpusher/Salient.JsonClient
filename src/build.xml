@@ -32,13 +32,13 @@
 
   <!-- Used to build the stable master branch -->
  
-  <Target Name="Go" DependsOnTargets="UpdateVersion;Build;RunTests;Package">
+  <Target Name="Go" DependsOnTargets="UpdateVersion;Build;RunTests;Package;PublishToNugetOrg">
 
     <!-- CalculateMetrics  calculation of metrics disabled until replacement for Reflector can be integrated -->
   </Target>
 
   <!-- Used to build the Dev branch - everything except packaging -->
-  <Target Name="GoDev" DependsOnTargets="UpdateVersion;Build;RunTests">
+  <Target Name="GoDev" DependsOnTargets="UpdateVersion;Build;RunTests;Package;PublishToNugetOrg">
   </Target>
 
   <Target Name="Build">

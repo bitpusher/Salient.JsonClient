@@ -18,24 +18,24 @@
   <files>
     <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Salient.JsonClient.35.dll" target="lib\net35" />
     <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Salient.JsonClient.35.pdb" target="lib\net35" />
-    <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Newtonsoft.Json.dll" target="lib\net35" />
+    <!--<file src="..\dist\lib\Salient.JsonClient.35\bin\**\Newtonsoft.Json.dll" target="lib\net35" />
     <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Newtonsoft.Json.pdb" target="lib\net35" />
     <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Salient.ReflectiveLoggingAdapter.35.dll" target="lib\net35" />
-    <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Salient.ReflectiveLoggingAdapter.35.pdb" target="lib\net35" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\**\Salient.ReflectiveLoggingAdapter.35.pdb" target="lib\net35" />-->
     
     <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Salient.JsonClient.Phone7.dll" target="lib\sl3-wp" />
     <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Salient.JsonClient.Phone7.pdb" target="lib\sl3-wp" />
-    <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Newtonsoft.Json.dll" target="lib\sl3-wp" />
+    <!--<file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Newtonsoft.Json.dll" target="lib\sl3-wp" />
     <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Newtonsoft.Json.pdb" target="lib\sl3-wp" />
     <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Salient.ReflectiveLoggingAdapter.Phone7.dll" target="lib\sl3-wp" />
-    <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Salient.ReflectiveLoggingAdapter.Phone7.pdb" target="lib\sl3-wp" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\Salient.ReflectiveLoggingAdapter.Phone7.pdb" target="lib\sl3-wp" />-->
     
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.JsonClient.Silverlight.dll" target="lib\sl40" />
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.JsonClient.Silverlight.pdb" target="lib\sl40" />
-    <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Newtonsoft.Json.dll" target="lib\sl40" />
+    <!--<file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Newtonsoft.Json.dll" target="lib\sl40" />
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Newtonsoft.Json.pdb" target="lib\sl40" />
     <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.ReflectiveLoggingAdapter.Silverlight.dll" target="lib\sl40" />
-    <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" target="lib\sl40" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\Salient.ReflectiveLoggingAdapter.Silverlight.pdb" target="lib\sl40" />-->
     <file src="lib\src\**\*.cs" target="src" />
   </files>
 </package>
