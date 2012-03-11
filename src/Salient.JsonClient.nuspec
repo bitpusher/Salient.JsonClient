@@ -16,9 +16,9 @@
     <language>en-GB</language>
   </metadata>
   <files>
-    <file src="lib\Salient.JsonClient.35\bin\**\*" target="lib\net35" />
-    <file src="lib\Salient.JsonClient.Phone7\bin\**\*" target="lib\sl3-wp" />
-    <file src="lib\Salient.JsonClient.Silverlight\bin\**\*" target="lib\sl40" />
+    <file src="..\dist\lib\Salient.JsonClient.35\bin\**\*" target="lib\net35" />
+    <file src="..\dist\lib\Salient.JsonClient.Phone7\bin\**\*" target="lib\sl3-wp" />
+    <file src="..\dist\lib\Salient.JsonClient.Silverlight\bin\**\*" target="lib\sl40" />
     <file src="lib\src\**\*.cs" target="src" />
   </files>
 </package>
