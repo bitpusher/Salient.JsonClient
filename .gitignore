@@ -27,3 +27,8 @@ msbuild.log
 msbuild.log
 msbuild.log
 src/_ReSharper.Salient.JsonClient/
+src/Salient.ReliableHttpClient.CassiniDev.Tests/obj
+src/Salient.ReliableHttpClient.Mocked.Tests/obj/*
+src/Salient.ReliableHttpClient.ReferenceImplementation/obj/*
+src/Salient.ReliableHttpClient.Serialization.Tests/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*/obj/debug/*
