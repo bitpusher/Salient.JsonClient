@@ -8,15 +8,7 @@ using Salient.ReliableHttpClient.Serialization.Newtonsoft;
 
 namespace Salient.ReliableHttpClient.ReferenceImplementation
 {
-    [Serializable]
-    [DataContract]
-    public class TestClass
-    {
-        [DataMember]
-        public int Id { get; set; }
-    }
-
-    public class SampleClient : Client
+    public class SampleClient : ClientBase
     {
         private string _target;
         public SampleClient(string target, IRequestFactory factory)
@@ -34,7 +26,21 @@ namespace Salient.ReliableHttpClient.ReferenceImplementation
 
         public void BeginGetTestClassWithException(ApiAsyncCallback callback, object state)
         {
-            BeginRequest(RequestMethod.GET, _target, "/SampleClientHandler.ashx?throw={throw}", new Dictionary<string, object> { { "throw", "true" } }, ContentType.TEXT, ContentType.JSON, TimeSpan.FromSeconds(1), 3000, 2, callback, state);
+            BeginRequest(
+                RequestMethod.GET,
+                _target,
+                "/SampleClientHandler.ashx?throw={throw}",
+                new Dictionary<string, object>
+                    {
+                        { "throw", "true" }
+                    },
+                ContentType.TEXT,
+                ContentType.JSON,
+                TimeSpan.FromSeconds(1),
+                3000,
+                2,
+                callback,
+                state);
         }
 
         public TestClass EndGetTestClassWithException(ReliableAsyncResult result)
@@ -42,6 +48,12 @@ namespace Salient.ReliableHttpClient.ReferenceImplementation
             return EndRequest<TestClass>(result);
         }
 
+
+        public TestClass GetTestClass()
+        {
+            var result = Request(RequestMethod.GET, _target, "/SampleClientHandler.ashx", null, ContentType.TEXT, ContentType.JSON, TimeSpan.FromSeconds(1), 3000, 0);
+            return DeserializeJson<TestClass>(result);
+        }
 
         public void BeginGetTestClass(ApiAsyncCallback callback, object state)
         {

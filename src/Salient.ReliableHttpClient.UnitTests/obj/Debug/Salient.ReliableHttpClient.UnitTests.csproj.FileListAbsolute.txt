@@ -1,0 +1,17 @@
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.UnitTests.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.UnitTests.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\nunit.framework.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReflectiveLoggingAdapter.35.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.ReferenceImplementation.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.Serializer.Newtonsoft.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.ReferenceImplementation.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.Serializer.Newtonsoft.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Salient.ReliableHttpClient.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Newtonsoft.Json.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\Newtonsoft.Json.xml
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\bin\Debug\nunit.framework.xml
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\obj\Debug\Salient.ReliableHttpClient.UnitTests.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient.UnitTests\obj\Debug\Salient.ReliableHttpClient.UnitTests.pdb

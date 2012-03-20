@@ -9,7 +9,7 @@ using Salient.ReliableHttpClient.Testing;
 
 namespace Salient.ReliableHttpClient.Mocked.Tests
 {
-    public class MockClient : Client
+    public class MockClient : ClientBase
     {
         public MockClient(IJsonSerializer serializer)
             : base(serializer)

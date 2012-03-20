@@ -21,6 +21,10 @@ namespace Salient.ReliableHttpClient
 
         public string InnerExceptionType { get; set; }
         public string InnerStackTrace { get; set; }
+        public ReliableHttpException(string message):base(message)
+        {
+            
+        }
         public ReliableHttpException(Exception exception)
             : base(exception.Message)
         {

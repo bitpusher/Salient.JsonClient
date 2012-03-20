@@ -1,0 +1,6 @@
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\bin\Debug\Salient.ReliableHttpClient.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\bin\Debug\Salient.ReliableHttpClient.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\bin\Debug\Salient.ReflectiveLoggingAdapter.35.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\obj\Debug\Salient.ReliableHttpClient.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.ReliableHttpClient\obj\Debug\Salient.ReliableHttpClient.pdb

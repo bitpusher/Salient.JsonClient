@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using Salient.ReliableHttpClient.Serialization;
 
 namespace Salient.ReliableHttpClient
 {
-    public class Client
+    public class ClientBase : IDisposable
     {
         protected RequestController Controller;
         protected Dictionary<string, object> Headers = new Dictionary<string, object>();
@@ -39,14 +40,14 @@ namespace Salient.ReliableHttpClient
             return requests;
         }
 
-        public Client(IJsonSerializer serializer)
+        public ClientBase(IJsonSerializer serializer)
         {
             UserAgent = "Salient.ReliableHttpClient";
             Serializer = serializer;
             Controller = new RequestController { UserAgent = UserAgent };
         }
 
-        protected Client(IJsonSerializer serializer, IRequestFactory factory)
+        protected ClientBase(IJsonSerializer serializer, IRequestFactory factory)
         {
 
             UserAgent = "Salient.ReliableHttpClient";
@@ -150,6 +151,51 @@ namespace Salient.ReliableHttpClient
             baseRequest.Append(HttpUtility.UrlEncode(dataItem));
         }
 
+        public string Request(RequestMethod method, string target, string uriTemplate, Dictionary<string, object> parameters, ContentType requestContentType,
+            ContentType responseContentType, TimeSpan cacheDuration, int timeout, int retryCount)
+        {
+#if SILVERLIGHT
+            if (System.Windows.Deployment.Current.Dispatcher.CheckAccess())
+            {
+                throw new ApiException("You cannot call this method from the UI thread.  Either use the asynchronous method: .Begin{name}, or call this from a background thread");
+            }
+#endif
+            uriTemplate = uriTemplate ?? "";
+            parameters = parameters ?? new Dictionary<string, object>();
+            
+
+            string response = null;
+            Exception exception = null;
+            var gate = new ManualResetEvent(false);
+
+            BeginRequest(method, target, uriTemplate, parameters, requestContentType, responseContentType, cacheDuration,
+                         timeout, retryCount, ar =>
+                                                  {
+                                                      try
+                                                      {
+                                                          response = EndRequest(ar);
+                                                      }
+                                                      catch (Exception ex)
+                                                      {
+                                                          exception = ex;
+                                                      }
+
+                                                      gate.Set();
+                                                  }, null);
+
+            // #FIXME: what is a good absolute master timeout?
+            if (!gate.WaitOne(30000))
+            {
+                throw new ReliableHttpException("request stalled");
+            }
+
+            if (exception != null)
+            {
+                throw exception;
+            }
+
+            return response;
+        }
 
         //#TODO make internals visible to tests so this can be protected
         public Guid BeginRequest(
@@ -229,8 +275,30 @@ namespace Salient.ReliableHttpClient
         {
             Controller.EndRequest(result);
             // TODO: watch for errors. need to bring over the jsonexceptionfactory
-            var obj = Serializer.DeserializeObject<T>(result.ResponseText);
+            string json = result.ResponseText;
+            return DeserializeJson<T>(json);
+        }
+
+        public T DeserializeJson<T>(string json)
+        {
+            var obj = Serializer.DeserializeObject<T>(json);
             return obj;
+        }
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                if (Controller != null)
+                {
+                    Controller.Dispose();
+                    Controller = null;
+                }
+            }
         }
     }
 }

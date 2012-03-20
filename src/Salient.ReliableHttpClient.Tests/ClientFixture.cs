@@ -15,7 +15,7 @@ namespace Salient.ReliableHttpClient.Tests
             public void TestRecorder()
             {
 
-                var client = new Client(new Serializer());
+                var client = new ClientBase(new Serializer());
                 client.StartRecording();
                 Assert.IsTrue(client.IsRecording);
                 var gate = new AutoResetEvent(false);
@@ -68,7 +68,7 @@ namespace Salient.ReliableHttpClient.Tests
             public void Test()
             {
 
-                var client = new Client(new Serializer());
+                var client = new ClientBase(new Serializer());
                 var gate = new AutoResetEvent(false);
                 Exception exception = null;
                 FooClass result = null;

@@ -1,0 +1,13 @@
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Salient.JsonSchemaUtilities.Tests.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Salient.JsonSchemaUtilities.Tests.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\nunit.framework.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Salient.JsonSchemaUtilities.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Salient.ReflectiveLoggingAdapter.35.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Salient.JsonSchemaUtilities.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Newtonsoft.Json.pdb
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\bin\Debug\nunit.framework.xml
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\obj\Debug\Salient.JsonSchemaUtilities.Tests.dll
+C:\dev\Salient\Salient.JsonClientNewBranch\src\Salient.JsonSchemaUtilities.Tests\obj\Debug\Salient.JsonSchemaUtilities.Tests.pdb

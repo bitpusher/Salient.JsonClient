@@ -62,11 +62,8 @@
   <ItemGroup>
     <Compile Include="CassiniSerializationFixture.cs" />
     <Compile Include="CassiniSampleClientFixture.cs" />
-    <Compile Include="JayRockCassiniSerializationFixture.cs" />
     <Compile Include="NewtonsoftCassiniSerializationFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiceStackCassiniSerializationFixture.cs" />
-    <Compile Include="SystemRuntimeCassiniSerializationFixture.cs" />
     <Compile Include="TestTypes\RecursiveClass.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -77,21 +74,9 @@
       <Project>{AEDA66F4-E83F-4971-95B3-154F32132A87}</Project>
       <Name>Salient.ReliableHttpClient.ReferenceImplementation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Salient.ReliableHttpClient.Serializer.JayRock\Salient.ReliableHttpClient.Serializer.JayRock.csproj">
-      <Project>{3329AD4C-0526-4B8D-8D2E-084BD2BFA79F}</Project>
-      <Name>Salient.ReliableHttpClient.Serializer.JayRock</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Salient.ReliableHttpClient.Serializer.Newtonsoft\Salient.ReliableHttpClient.Serializer.Newtonsoft.csproj">
       <Project>{B2F31D08-C115-451D-BAD2-F56F2148143B}</Project>
       <Name>Salient.ReliableHttpClient.Serializer.Newtonsoft</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Salient.ReliableHttpClient.Serializer.ServiceStack\Salient.ReliableHttpClient.Serializer.ServiceStack.csproj">
-      <Project>{BF112F58-AAE2-4E26-80FA-D716117FA255}</Project>
-      <Name>Salient.ReliableHttpClient.Serializer.ServiceStack</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Salient.ReliableHttpClient.Serializer.SystemRuntime\Salient.ReliableHttpClient.Serializer.SystemRuntime.csproj">
-      <Project>{2813EC7D-AABC-4567-AC39-5D01AEDF8A25}</Project>
-      <Name>Salient.ReliableHttpClient.Serializer.SystemRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="..\Salient.ReliableHttpClient.TestCore\Salient.ReliableHttpClient.TestCore.csproj">
       <Project>{79A49F9D-BE89-499D-8553-AA3B03100A70}</Project>

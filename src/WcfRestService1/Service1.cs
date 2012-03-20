@@ -8,17 +8,14 @@ using System.Text;
 
 namespace WcfRestService1
 {
-    // Start the service and browse to http://<machine_name>:<port>/Service1/help to view the service's generated help page
-    // NOTE: By default, a new instance of the service is created for each call; change the InstanceContextMode to Single if you want
-    // a single instance of the service to process all calls.	
     [ServiceContract]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
-    // NOTE: If the service is renamed, remember to update the global.asax.cs file
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class Service1
     {
         // TODO: Implement the collection resource that will contain the SampleItem instances
 
+        
         [WebGet(UriTemplate = "")]
         public List<SampleItem> GetCollection()
         {
@@ -29,7 +26,7 @@ namespace WcfRestService1
         [WebInvoke(UriTemplate = "", Method = "POST")]
         public SampleItem Create(SampleItem instance)
         {
-            
+
             instance.Id = 1;
             return instance;
         }
@@ -37,7 +34,7 @@ namespace WcfRestService1
         [WebGet(UriTemplate = "{id}")]
         public SampleItem Get(string id)
         {
-            return new SampleItem() {Id = 1, StringValue = "Hello"};
+            return new SampleItem() { Id = 1, StringValue = "Hello" };
         }
 
         [WebInvoke(UriTemplate = "{id}", Method = "PUT")]
@@ -49,7 +46,7 @@ namespace WcfRestService1
         [WebInvoke(UriTemplate = "{id}", Method = "DELETE")]
         public void Delete(string id)
         {
-            
+
         }
 
     }

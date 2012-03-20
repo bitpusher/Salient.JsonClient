@@ -368,7 +368,7 @@ namespace Salient.ReliableHttpClient
                         _requestQueue.Enqueue(info);
                         Log.Info(string.Format("Added {0} to cache", info.Uri));
                     }
-                    info.AddCallback(callback, state);
+                  
                 }
                 return info.Id;
             }
